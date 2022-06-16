@@ -1,0 +1,31 @@
+<div class="ex2">
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>forum</mat-icon>
+        </button>
+        <span>{{chat}}</span>
+    </mat-toolbar>
+    <div class="ex1">
+        <table *ngFor="let row of Userdata">
+            <h4>You : {{row.You}}</h4>
+            <h4>Garuda : {{row.garuda}}</h4>
+        </table>
+    </div>
+    <form [formGroup]="inputform" (ngSubmit)="Usersend()">
+        <input type="text" formControlName="user" required>
+        <button mat-icon-button class="example-icon" type="button" aria-label="Example icon-button with menu icon">
+            <mat-icon> near_me</mat-icon>
+        </button>
+    </form>
+</div>
+
+<!-- var c = 0;
+                    if(c == 0){
+                        if (row.garuda != "") {
+                            var ii = "You :" + row.You;   
+                            document.getElementById("ui").innerHTML = "You : " + row.You;
+                        } else {
+                            document.getElementById(ui).innerHTML = "You : " + row.You;
+                           
+                        }
+                    } -->

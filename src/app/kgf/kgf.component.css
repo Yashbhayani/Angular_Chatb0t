@@ -1,0 +1,51 @@
+.ex2{
+    background-color:rgb(157, 230, 255);
+    width: 30%;
+    height: 85%;
+    overflow: auto;
+    align-items: center;
+    margin-left: 33%;
+    margin-top: 1%;
+    border: 1px solid blue;
+}
+.ex1 {
+    background-color: rgb(157, 230, 255);
+    width: 400px;
+    height: 420px;
+    overflow: auto;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.ex1::-webkit-scrollbar {
+    width: 5px;
+    height: 20px;
+}
+  
+ 
+.ex1::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(255, 255, 255); 
+    border-radius: 10px;
+}
+   
+.ex1::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+  
+.ex1::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+input[type="text"]{
+    border-radius: 10px;
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 290px;
+    height: 1px;   
+    margin-left: 12px;
+  }
+
+.garuda{
+    margin: right;
+  }
